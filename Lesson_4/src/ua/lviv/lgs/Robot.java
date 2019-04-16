@@ -2,13 +2,8 @@ package ua.lviv.lgs;
 
 public class Robot {
 		
-	 void work(){
-	
-	}
-
-	@Override
-	public String toString() {
-		return "я Robot-€ просто працюю";
+	public void work() {
+		System.out.println("я Robot Ц € просто працюю ");
 	}
 	
 }

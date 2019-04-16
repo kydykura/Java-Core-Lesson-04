@@ -7,13 +7,17 @@ public class Application {
 		Robot r = new Robot();
 		CoffeRobot c = new CoffeRobot();
 		RobotCoocker rc = new RobotCoocker();
-		System.out.println(r);
-		System.out.println(c);
-		System.out.println(rc);
-		Object mass[] = {r, c, rc};
-		for (int i=0; i<=2; i++) {
-			System.out.println(mass[i]);
+		RobotDancer rd = new RobotDancer();
+		r.work();
+		c.work();
+		rc.work();
+		rd.work();
+		
+		Object mass[] = {r,c,rc,rd};
+		for (int i=0;i<=3;i++) {
+			((Robot) mass[i]).work();
 		}
+	
 		
 		Wheel w = new Wheel(2, 5, 8);
 		Helm h = new Helm(25, "black & ");		
